@@ -46,3 +46,7 @@ I’ve added the **MIT License** because it’s the most permissive and simple, 
 ## 🙏 Special Thanks
 
 A huge shout-out to the amazing developers of **[Ulauncher](https://ulauncher.io)** – hands down, the best application launcher in the universe for Linux! 🚀 You guys rock! And a big thank you to the team behind **[MassCode](https://masscode.io)** for building such a cool and powerful snippet manager. You’ve made coding life so much easier!
+
+## ⭐ Show Your Support
+
+I’m not really concerned about the number of stars, but if you find this project useful or interesting, consider giving it a star on GitHub to help me gauge the interest. If you’d rather not leave a star, that’s totally fine – feel free to open an issue, submit a pull request, or even drop a message of support in an issue instead! All kinds of feedback, advice, and contributions are always welcome and appreciated. 😊
