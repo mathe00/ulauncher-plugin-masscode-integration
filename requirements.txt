@@ -1,0 +1,3 @@
+pyperclip
+fuzzywuzzy
+python-Levenshtein  # optional, for improved performance with fuzzywuzzy

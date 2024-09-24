@@ -1,0 +1,48 @@
+{
+  "required_api_version": "^2.0.0",
+  "name": "MassCode Snippets",
+  "description": "Search and retrieve snippets from MassCode",
+  "developer_name": "Author Test",
+  "icon": "images/icon.png",
+  "options": {
+    "query_debounce": 0.05
+  },
+  "preferences": [
+    {
+      "id": "mc_keyword",
+      "type": "keyword",
+      "name": "Activation Keyword",
+      "default_value": "ms"
+    },
+    {
+      "id": "mc_db_path",
+      "type": "input",
+      "name": "MassCode DB Path",
+      "description": "Path to your MassCode database file",
+      "default_value": "~/massCode/db.json"
+    },
+    {
+      "id": "copy_paste_mode",
+      "type": "select",
+      "name": "Copy/Paste Mode",
+      "description": "Choose how snippets are handled: copy to clipboard, paste directly, or both.",
+      "default_value": "copy",
+      "options": [
+        {"value": "copy", "text": "Copy to Clipboard"},
+        {"value": "paste", "text": "Paste Directly"},
+        {"value": "both", "text": "Copy & Paste"}
+      ]
+    },
+    {
+      "id": "enable_history",
+      "type": "select",
+      "name": "Enable History",
+      "description": "Enable or disable search history.",
+      "default_value": "true",
+      "options": [
+        {"value": "true", "text": "Enabled"},
+        {"value": "false", "text": "Disabled"}
+      ]
+    }
+  ]
+}
