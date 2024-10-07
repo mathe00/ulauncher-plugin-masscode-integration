@@ -26,6 +26,8 @@ To install and try out the **Ulauncher Plugin/Extension MassCode Integration**, 
    ```
 4. Restart **[Ulauncher](https://ulauncher.io)**.
 
+5. **Important:** After installation, it is highly recommended to configure the settings for the extension. You can do this by opening Ulauncher, navigating to the extensions section, and adjusting the preferences of the MassCode plugin/extension. This includes setting the path to your MassCode database and choosing how snippets should be handled (copy to clipboard, paste directly, etc.).
+
 That’s it! The plugin/extension is now installed, and you can start searching your MassCode snippets directly from **[Ulauncher](https://github.com/Ulauncher/Ulauncher)**.
 
 ## ✨ New: Ulauncher Plugin/Extension Text Tools
