@@ -30,6 +30,16 @@ To install and try out the **Ulauncher Plugin/Extension MassCode Integration**, 
 
 That’s it! The plugin/extension is now installed, and you can start searching your MassCode snippets directly from **[Ulauncher](https://github.com/Ulauncher/Ulauncher)**.
 
+## 🖼️ Screenshots
+
+Here are some examples of how the Ulauncher Plugin/Extension MassCode Integration works:
+
+<img src="https://github.com/user-attachments/assets/11c427c6-7472-4177-a515-d30e595d0acd" alt="image" width="500"/>
+<img src="https://github.com/user-attachments/assets/9ae7e59b-cf36-4c51-802a-6512d550649b" alt="image" width="500"/>
+
+
+Feel free to include your own screenshots to showcase how the plugin/extension works in action!
+
 ## ✨ New: Ulauncher Plugin/Extension Text Tools
 
 If you're interested in more text transformations, check out my latest **[Text Tools plugin/extension](https://github.com/mathe00/ulauncher-plugin-text-tools)**! This new extension allows you to transform any input text into various formats such as Uppercase, CamelCase, Snake Case, and even SpongeBob Case (yes, that's a thing!). You can easily toggle these transformations from the Ulauncher settings, making it a super versatile and complete tool for text manipulation. 💡
