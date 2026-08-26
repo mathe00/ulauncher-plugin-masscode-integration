@@ -7,7 +7,7 @@ and provides shared fixtures for cache tests.
 
 import os
 import sys
-from typing import Generator
+from collections.abc import Generator
 
 import pytest
 
@@ -114,3 +114,41 @@ def mock_all(mock_loader, mock_mtime, mock_vault_path) -> callable:
         # test SnippetCache without any filesystem access
     """
     return mock_mtime
+
+
+# ---------------------------------------------------------------------------
+# Real-history-file protection
+# ---------------------------------------------------------------------------
+# src.constants.HISTORY_FILE points at <extension root>/context_history.json —
+# the user's REAL learning history. Some listener code paths call
+# update_context_history() with its default path argument. This autouse
+# fixture snapshots the file before each test and restores it afterwards,
+# so even an accidentally-unmocked write cannot corrupt real data.
+# ---------------------------------------------------------------------------
+
+import os
+
+
+@pytest.fixture(autouse=True)
+def protect_real_history_file():
+    """Snapshot and restore the real context_history.json around each test."""
+    import json
+
+    from src.constants import HISTORY_FILE
+
+    backup = None
+    if os.path.exists(HISTORY_FILE):
+        with open(HISTORY_FILE, "r", encoding="utf-8") as f:
+            backup = f.read()
+
+    yield
+
+    if backup is None:
+        # Test deleted or never touched the real file — recreate empty to
+        # preserve the pre-suite state (empty history).
+        if os.path.exists(HISTORY_FILE):
+            with open(HISTORY_FILE, "w", encoding="utf-8") as f:
+                json.dump({}, f)
+    else:
+        with open(HISTORY_FILE, "w", encoding="utf-8") as f:
+            f.write(backup)
